@@ -3,8 +3,10 @@ li > a {
   color: #000000;
 }
 h1 {
-  display: block;
-  margin: -48px 30px 20px;
+  position: relative;
+  top: -10px;
+  left: 148px;
+  z-index: -1;
 }
 .navigation {
   background-color: #ad95e6;
@@ -21,6 +23,22 @@ h1 {
   border: 1px solid #ad95e6;
 }
 .role {
+  position: relative;
+  top: 50px;
+  z-index: -1;
+}
+.project-header {
+  text-align: center;
+  position: relative;
+  margin: 65px auto;
+  top: 70px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 0px;
 }
 #welcome-section img {
   position: relative;
