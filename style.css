@@ -31,14 +31,16 @@ h1 {
   text-align: center;
   position: relative;
   margin: 65px auto;
-  top: 70px;
+  top: 45px;
+}
+#projects {
+  margin: 30px auto;
 }
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 40px;
-  grid-row-gap: 0px;
+  margin: 30px auto;
 }
 #welcome-section img {
   position: relative;
