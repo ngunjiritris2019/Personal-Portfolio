@@ -1,16 +1,10 @@
-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-  border: 1px solid #ad95e6;
-}
 li > a {
   text-decoration: none;
   color: #000000;
 }
 h1 {
   display: block;
-  margin: 94px 30px 20px;
+  margin: -48px 30px 20px;
 }
 .navigation {
   background-color: #ad95e6;
@@ -19,6 +13,14 @@ h1 {
   position: fixed;
   top: 0;
   right: -40px;
+}
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #ad95e6;
+}
+.role {
 }
 #welcome-section img {
   position: relative;
