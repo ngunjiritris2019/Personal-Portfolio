@@ -8,6 +8,10 @@ li > a {
   text-decoration: none;
   color: #000000;
 }
+h1 {
+  display: block;
+  margin: 94px 30px 20px;
+}
 .navigation {
   background-color: #ad95e6;
   margin: 0 30px;
@@ -15,4 +19,15 @@ li > a {
   position: fixed;
   top: 0;
   right: -40px;
+}
+#welcome-section img {
+  position: relative;
+  left: 30px;
+  top: 100px;
+  z-index: -1;
+}
+#welcome-section {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
 }
