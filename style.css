@@ -32,6 +32,10 @@ h1 {
   position: relative;
   margin: 65px auto;
   top: 45px;
+  z-index: -1;
+}
+.contact-header {
+  text-align: center;
 }
 #projects {
   margin: 30px auto;
@@ -52,4 +56,10 @@ h1 {
   display: flex;
   margin: 0 auto;
   align-items: center;
+}
+#contact-info {
+  text-align: center;
+  background-color: rgba(80, 67, 86, 0.259);
+  padding: 30px 20px;
+  border: 10px solid #50435642;
 }
