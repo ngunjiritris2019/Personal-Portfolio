@@ -6,33 +6,55 @@ h1 {
   position: relative;
   top: -10px;
   left: 148px;
-  z-index: -1;
+}
+.container {
+  margin: 20px 10px;
 }
 .navigation {
   background-color: #ad95e6;
-  margin: 0 30px;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
-  right: -40px;
+  left: 0;
+  z-index: 1;
 }
 .nav-list {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
   border: 1px solid #ad95e6;
+  padding: 20px auto;
+  margin: 30px 20px;
+}
+.project-tile {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-tile img {
+  transition: transform 0.3s ease;
+}
+
+.project-tile:hover img {
+  transform: translateY(
+    -10px
+  ); /* Adjust the value for desired backward transformation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
 }
 .role {
   position: relative;
-  top: 50px;
-  z-index: -1;
+  top: 70px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
 }
 .project-header {
   text-align: center;
   position: relative;
   margin: 65px auto;
-  top: 45px;
-  z-index: -1;
+  top: 57px;
 }
 .contact-header {
   text-align: center;
@@ -42,24 +64,35 @@ h1 {
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  column-gap: 12px;
   margin: 30px auto;
+  max-width: 1280px;
 }
 #welcome-section img {
   position: relative;
   left: 30px;
   top: 100px;
-  z-index: -1;
 }
 #welcome-section {
   display: flex;
   margin: 0 auto;
   align-items: center;
 }
-#contact-info {
+footer {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
-  background-color: rgba(80, 67, 86, 0.259);
-  padding: 30px 20px;
-  border: 10px solid #50435642;
+  align-items: center;
+  background: rgba(80, 67, 86, 0.259);
+  justify-content: space-evenly;
+  padding: 32px;
+}
+hr {
+  border: 2px solid #7d4ee9;
+  width: 485px;
+  display: block;
+  margin: 0 auto;
 }
